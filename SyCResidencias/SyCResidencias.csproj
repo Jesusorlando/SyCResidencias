@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DCAE06A5-D0A7-4249-BBD8-A898862A305A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SyCResidencias</RootNamespace>
+    <AssemblyName>SyCResidencias</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.22.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\CAlumno.cs" />
+    <Compile Include="Clases\CAsesores_Externos.cs" />
+    <Compile Include="Clases\CCiclos.cs" />
+    <Compile Include="Clases\CEmpresas.cs" />
+    <Compile Include="Clases\CEstatus.cs" />
+    <Compile Include="Clases\CLoginUsuarios.cs" />
+    <Compile Include="Clases\CProfesor.cs" />
+    <Compile Include="Clases\CResidencias.cs" />
+    <Compile Include="Clases\MySQL.cs" />
+    <Compile Include="Formularios\frmAsesorExterno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAsesorExterno.Designer.cs">
+      <DependentUpon>frmAsesorExterno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAsignacionAsesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAsignacionAsesor.Designer.cs">
+      <DependentUpon>frmAsignacionAsesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmCapturaCandidato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmCapturaCandidato.Designer.cs">
+      <DependentUpon>frmCapturaCandidato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmCapturaEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmCapturaEmpresa.Designer.cs">
+      <DependentUpon>frmCapturaEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmMENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmMENU.Designer.cs">
+      <DependentUpon>frmMENU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmMuestraCandidatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmMuestraCandidatos.Designer.cs">
+      <DependentUpon>frmMuestraCandidatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmResidencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmResidencia.Designer.cs">
+      <DependentUpon>frmResidencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmResidentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmResidentes.Designer.cs">
+      <DependentUpon>frmResidentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\frmAsesorExterno.resx">
+      <DependentUpon>frmAsesorExterno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAsignacionAsesor.resx">
+      <DependentUpon>frmAsignacionAsesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmCapturaCandidato.resx">
+      <DependentUpon>frmCapturaCandidato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmCapturaEmpresa.resx">
+      <DependentUpon>frmCapturaEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmMENU.resx">
+      <DependentUpon>frmMENU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmMuestraCandidatos.resx">
+      <DependentUpon>frmMuestraCandidatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmResidencia.resx">
+      <DependentUpon>frmResidencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmResidentes.resx">
+      <DependentUpon>frmResidentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Conectividad\" />
+    <Folder Include="Funciones\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bootloader_users_person_people_6080.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_icon-icons.com_57997 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3986696-building-enterprise-icon_112275.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school_students_icon_144607.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\questionmark1_83827 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutdown_105168.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teacher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_accounts_15362 %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
