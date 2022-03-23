@@ -52,11 +52,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(18, 57);
+            this.label1.Location = new System.Drawing.Point(18, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(157, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre de la Empresa:";
+            this.label1.Visible = false;
             // 
             // label2
             // 
@@ -90,10 +91,11 @@
             // 
             // txtEmpresa
             // 
-            this.txtEmpresa.Location = new System.Drawing.Point(209, 57);
+            this.txtEmpresa.Location = new System.Drawing.Point(209, 27);
             this.txtEmpresa.Name = "txtEmpresa";
             this.txtEmpresa.Size = new System.Drawing.Size(309, 20);
             this.txtEmpresa.TabIndex = 4;
+            this.txtEmpresa.Visible = false;
             // 
             // txtDireccion
             // 
@@ -171,7 +173,7 @@
             // 
             // txtRazon
             // 
-            this.txtRazon.Location = new System.Drawing.Point(209, 226);
+            this.txtRazon.Location = new System.Drawing.Point(209, 53);
             this.txtRazon.Name = "txtRazon";
             this.txtRazon.Size = new System.Drawing.Size(309, 20);
             this.txtRazon.TabIndex = 12;
@@ -180,7 +182,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label5.Location = new System.Drawing.Point(80, 227);
+            this.label5.Location = new System.Drawing.Point(89, 58);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(95, 17);
             this.label5.TabIndex = 11;

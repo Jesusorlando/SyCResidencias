@@ -50,7 +50,7 @@ namespace SyCResidencias.Formularios
 
         private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            idEmpresa = -1;
+            idEmpresa = ++idEmpresa;
             razon = txtRazon.Text;
             direccion = txtDireccion.Text;
             telefono = txtTel.Text;

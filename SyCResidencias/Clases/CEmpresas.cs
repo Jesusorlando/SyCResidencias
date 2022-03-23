@@ -19,7 +19,7 @@ namespace SyCResidencias.Clases
 
         public CEmpresas()
         {
-            idEmpresa = 0;
+            idEmpresa = idEmpresa++;
             razon = null;
             direccion = null;
             telefono = null;
