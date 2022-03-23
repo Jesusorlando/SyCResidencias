@@ -89,13 +89,16 @@ namespace SyCResidencias.Clases
         //MÉTODOS OPERATIVOS
         public void insertaAsesorExterno()
         {
+            
             string strSql = null;
             MySQL xCnx = new MySQL();
             try
             {
-                    //Realiza inserción de datos
-                    strSql = "INSERT INTO ASESORES_EXTERNOS VALUES (DEFAULT, "+ _IDEmpresa +", '"+ _Nombre +"', '"+ _Cargo +"', '"+ _Departamento +"', '"+ _Correo +"', '"+ _Telefono +"');";
+                
+                //Realiza inserción de datos
+                strSql = "INSERT INTO ASESORES_EXTERNOS (IDEmpresa, Nombre, Cargo, Departamento, correo, telefono) VALUES ( " + _IDEmpresa +", '"+ _Nombre +"', '"+ _Cargo +"', '"+ _Departamento +"', '"+ _Correo +"', '"+ _Telefono +"');";
                 xCnx.objetoCommand(strSql);
+                
             }
             catch (Exception ex)
             {
@@ -105,6 +108,8 @@ namespace SyCResidencias.Clases
             {
                 xCnx = null;
             }
+            
+
         }
 
         public void actualizaAsesorExterno()
